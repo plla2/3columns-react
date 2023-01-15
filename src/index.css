@@ -1,0 +1,76 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-Brightorange: hsl(31, 77%, 52%);
+  --bg-Darkcyan: hsl(184, 100%, 22%);
+  --bg-Verydarkcyan: hsl(179, 100%, 13%);
+  --tm-Transparentwhite: hsla(0, 0%, 100%, 0.75);
+  --td-Verylightgray: hsl(0, 0%, 95%);
+  /* --ff-sholder: "Big Shoulders Display", cursive; */
+  /* --ff-lexend: "Lexend Deca", sans-serif; */
+  --fs-16: 1rem;
+  --fs-18: 1.125rem;
+  --fw-400: 400;
+  --fw-700: 700;
+  --line-height: 1.5;
+}
+body {
+  margin: 0;
+  font-size: var(--fs-16);
+  font-weight: var(--fw-400);
+  line-height: var(--line-height);
+  color: var(--tm-Transparentwhite);
+  background-color: var(--td-Verylightgray);
+}
+
+.container {
+  max-width: 375px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  margin-top: auto;
+  margin-bottom: 0 !important;
+}
+
+.container > * + * {
+  margin-bottom: 1.67rem;
+}
+
+.container:nth-child(1) {
+  background-color: var(--bg-Brightorange);
+  border-radius: 0.5rem 0.5rem 0 0;
+  margin-top: 30px;
+}
+
+.container:nth-child(1) a {
+  background-color: var(--bg-Brightorange);
+}
+
+.container:nth-child(2) {
+  background-color: var(--bg-Darkcyan);
+}
+
+.container:nth-child(2) a {
+  background-color: var(--bg-Darkcyan);
+}
+
+.container:nth-child(3) {
+  background-color: var(--bg-Verydarkcyan);
+  border-radius: 0 0 0.5rem 0.5rem;
+  margin-bottom: 30px;
+}
+
+.container:nth-child(3) a {
+  background-color: var(--bg-Verydarkcyan);
+}

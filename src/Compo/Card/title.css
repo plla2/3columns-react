@@ -1,0 +1,5 @@
+h1 {
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  color: hsl(0, 0%, 95%);
+}

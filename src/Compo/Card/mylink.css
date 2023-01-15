@@ -1,0 +1,15 @@
+a {
+  display: inline-block;
+  background-color: hsl(0, 0%, 95%);
+  font-size: 18px;
+  padding: 11px 31px;
+  border-radius: 40px;
+  text-decoration: none;
+  color: hsl(0, 0%, 95%);
+  border: 1px solid white;
+}
+
+a:hover,
+a:focus {
+  opacity: 0.8;
+}
